@@ -38,8 +38,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - name: Install
-        run: yarn
+      - run: yarn
+      - run: yarn build
+      - run: yarn lint
+      - run: yarn types:check
       - name: Publish to npm
         run: yarn publish
         env:
