@@ -37,6 +37,10 @@
     "@mskelton/eslint-config": "^5.5.0",
     "@mskelton/prettier-config": "^5.1.1",
     "@mskelton/tsconfig": "^1.0.2",
+    "@types/html-webpack-plugin": "^3.2.1",
+    "@types/node": "^12.12.17",
+    "@types/webpack": "^4.41.0",
+    "@types/webpack-dev-server": "^3.9.0",
     "@typescript-eslint/eslint-plugin": "^2.11.0",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.19.1",
@@ -50,6 +54,9 @@
     "typescript": "^3.7.3"
   },
   "dependencies": {
-    "webpack": "^4.41.2"
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.9.0"
   }
 }

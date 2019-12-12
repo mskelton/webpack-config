@@ -20,7 +20,14 @@ npm install --save-dev @mskelton/webpack-config
 ```js
 const { createWebpackConfig } = require('@mskelton/webpack-config')
 
-module.exports = createWebpackConfig({})
+module.exports = createWebpackConfig({
+  entry: './src/index.tsx',
+  html: {
+    favicon: '',
+    template: '',
+  },
+  outputPath: '',
+})
 ```
 
 ## Contributors ✨
