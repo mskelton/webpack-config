@@ -1,0 +1,8 @@
+{
+  "extends": "@mskelton/tsconfig",
+  "compilerOptions": {
+    "emitDeclarationOnly": true,
+    "rootDir": "src",
+    "outDir": "lib"
+  }
+}
