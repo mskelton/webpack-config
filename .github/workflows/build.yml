@@ -14,12 +14,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install
         run: yarn
-      - name: Lint
-        run: yarn lint
-      - name: Type check
-        run: yarn types:check
       - name: Test
-        run: yarn test
+        run: |
+          yarn lint
+          yarn types:check
+          yarn test
   create-release:
     name: Create GitHub Release
     needs: build
@@ -45,7 +44,9 @@ jobs:
       - name: Install
         run: yarn
       - name: Build
-        run: yarn build
+        run: |
+          yarn build
+          yarn types:generate
       - name: Publish to npm
         run: yarn publish
         env:

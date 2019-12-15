@@ -1,5 +1,5 @@
 {
-  "name": "webpack-config",
+  "name": "@mskelton/webpack-config",
   "description": "Shared webpack config for my React projects.",
   "version": "1.0.2",
   "author": "Mark Skelton",
