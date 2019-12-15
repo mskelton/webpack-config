@@ -9,7 +9,7 @@ export function createWebpackConfig(options: Options): Configuration {
       historyApiFallback: {
         index: '/index.html',
       },
-      port: 3000,
+      port: options.port,
     },
     devtool: 'source-map',
     entry: options.entry,

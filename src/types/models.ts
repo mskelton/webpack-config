@@ -8,4 +8,5 @@ export type Options = {
   }
   outputPath: string
   plugins: Plugin[]
+  port?: number
 }
