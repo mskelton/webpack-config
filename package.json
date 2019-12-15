@@ -21,6 +21,7 @@
     "types:generate": "yarn tsc",
     "types:check": "yarn tsc --noEmit --emitDeclarationOnly false",
     "lint": "yarn eslint .",
+    "test": "jest",
     "postversion": "git push && git push --tags"
   },
   "eslintConfig": {
@@ -58,6 +59,7 @@
     "eslint-plugin-sort-keys-fix": "^1.1.0",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-typescript-sort-keys": "^0.5.0",
+    "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "typescript": "^3.7.3"
   },
