@@ -2,7 +2,7 @@
   "private": false,
   "name": "@mskelton/webpack-config",
   "description": "Shared webpack config for my React projects.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Mark Skelton",
   "repository": {
     "type": "git",
