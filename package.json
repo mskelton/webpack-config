@@ -1,5 +1,4 @@
 {
-  "private": false,
   "name": "@mskelton/webpack-config",
   "description": "Shared webpack config for my React projects.",
   "version": "1.0.4",
@@ -17,6 +16,9 @@
     "webpack",
     "react"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "babel src --out-dir lib --source-maps --extensions .ts",
     "types:generate": "yarn tsc",
