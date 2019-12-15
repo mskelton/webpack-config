@@ -1,7 +1,7 @@
 {
   "name": "@mskelton/webpack-config",
   "description": "Shared webpack config for my React projects.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Mark Skelton",
   "repository": {
     "type": "git",
