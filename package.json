@@ -14,6 +14,7 @@
   "license": "MIT",
   "keywords": [
     "webpack",
+    "webpack-configuration",
     "react"
   ],
   "publishConfig": {
@@ -45,7 +46,7 @@
     "@babel/cli": "^7.7.5",
     "@babel/core": "^7.7.5",
     "@babel/preset-typescript": "^7.7.4",
-    "@mskelton/eslint-config": "^5.5.0",
+    "@mskelton/eslint-config": "^5.6.1",
     "@mskelton/prettier-config": "^5.1.1",
     "@mskelton/tsconfig": "^1.0.2",
     "@types/html-webpack-plugin": "^3.2.1",

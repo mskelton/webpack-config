@@ -362,10 +362,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@mskelton/eslint-config@^5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@mskelton/eslint-config/-/eslint-config-5.5.0.tgz#48a94d8e180c9326b486a62670845850f7b700f1"
-  integrity sha512-1Fe0y6N4mfJbuuz5FWSvo9k7sSQp10xHOuTb4gXgqJPqLVW5ln/N0aW/3SQAAaT4FtoGiUzeS5Y1W5NducBU9w==
+"@mskelton/eslint-config@^5.6.1":
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/@mskelton/eslint-config/-/eslint-config-5.6.1.tgz#c102bd9ba92233fc2c6954174d2544bb87d224dd"
+  integrity sha512-tNyn1e0Su4L8kIz7KTpnKe0bVZ3ar/OyKhF/Tr658qZ7mk4QQSrgR7dPqy15I7Q9COqi7NCyHbqUupWVqqjG/g==
   dependencies:
     "@typescript-eslint/parser" "^2.4.0"
     babel-eslint "^10.0.3"
