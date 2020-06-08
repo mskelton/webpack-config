@@ -3,6 +3,12 @@ import { getDefaultPlugins } from './plugins'
 import { Options } from './types/models'
 import { DEFAULT_ENVIRONMENT } from './vars'
 
+declare module 'webpack' {
+  interface Configuration {
+    devServer: unknown
+  }
+}
+
 export function createWebpackConfig(options: Options): Configuration {
   return {
     devServer: {

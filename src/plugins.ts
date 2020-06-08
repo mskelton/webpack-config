@@ -9,7 +9,7 @@ type ExcludesFalse = <T>(x: T | false) => x is T
 export function getDefaultPlugins({ html }: Options): Plugin[] {
   return [
     new EnvironmentPlugin({ NODE_ENV: DEFAULT_ENVIRONMENT }),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin() as any,
     new HtmlPlugin(html),
     isDev && new HotModuleReplacementPlugin(),
   ].filter((Boolean as Plugin) as ExcludesFalse)
