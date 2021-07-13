@@ -1,8 +1,12 @@
 {
-  "extends": "@mskelton/tsconfig",
   "compilerOptions": {
-    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationMap": true,
+    "moduleResolution": "node",
+    "outDir": "lib",
     "rootDir": "src",
-    "outDir": "lib"
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext"
   }
 }

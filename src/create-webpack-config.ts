@@ -1,9 +1,8 @@
-import { Configuration } from 'webpack'
-import { getDefaultPlugins } from './plugins'
-import { Options } from './types/models'
-import { DEFAULT_ENVIRONMENT } from './vars'
+import { Configuration } from "webpack"
+import { getDefaultPlugins } from "./plugins"
+import { Options } from "./types"
 
-declare module 'webpack' {
+declare module "webpack" {
   interface Configuration {
     devServer: unknown
   }
@@ -13,23 +12,23 @@ export function createWebpackConfig(options: Options): Configuration {
   return {
     devServer: {
       historyApiFallback: {
-        index: '/index.html',
+        index: "/index.html",
       },
       port: options.port,
     },
-    devtool: 'source-map',
+    devtool: "source-map",
     entry: options.entry,
-    mode: process.env.NODE_ENV || DEFAULT_ENVIRONMENT,
+    mode: process.env.NODE_ENV || "development",
     module: {
       rules: [
         {
           exclude: /node_modules/,
           test: /\.(tsx?|jsx?)$/,
-          use: 'babel-loader',
+          use: "babel-loader",
         },
         {
-          enforce: 'pre',
-          loader: 'source-map-loader',
+          enforce: "pre",
+          loader: "source-map-loader",
           test: /\.js$/,
         },
       ],
@@ -38,21 +37,21 @@ export function createWebpackConfig(options: Options): Configuration {
       splitChunks: {
         cacheGroups: {
           vendor: {
-            chunks: 'all',
-            name: 'vendor',
+            chunks: "all",
+            name: "vendor",
             test: /[\\/]node_modules[\\/]/,
           },
         },
       },
     },
     output: {
-      filename: '[name].[hash].bundle.js',
+      filename: "[name].[hash].bundle.js",
       path: options.outputPath,
-      publicPath: '/',
+      publicPath: "/",
     },
     plugins: [...getDefaultPlugins(options), ...options.plugins],
     resolve: {
-      extensions: ['.ts', '.tsx', '.js', '.jsx'],
+      extensions: [".ts", ".tsx", ".js", ".jsx"],
     },
   }
 }

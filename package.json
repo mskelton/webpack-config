@@ -14,15 +14,19 @@
     "webpack-configuration",
     "react"
   ],
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "jest",
+    "ts": "tsc"
+  },
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "build": "tsc",
-    "lint": "eslint .",
-    "format": "prettier --write .",
-    "test": "jest"
-  },
+  "files": [
+    "src",
+    "lib"
+  ],
   "peerDependencies": {
     "webpack": ">=5"
   },

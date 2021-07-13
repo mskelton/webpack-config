@@ -1,4 +1,4 @@
-import { Plugin } from 'webpack'
+import { WebpackPluginInstance } from 'webpack'
 
 export type Options = {
   entry: string
@@ -7,6 +7,6 @@ export type Options = {
     template: string
   }
   outputPath: string
-  plugins: Plugin[]
+  plugins: WebpackPluginInstance[]
   port?: number
 }

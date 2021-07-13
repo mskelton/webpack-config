@@ -25,7 +25,7 @@ jobs:
           node-version: 14.x
           cache: yarn
       - run: yarn install --immutable
-      - run: yarn build
+      - run: yarn ts
       - run: yarn semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
