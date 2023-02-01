@@ -1,10 +1,10 @@
 import { CleanWebpackPlugin } from "clean-webpack-plugin"
-import * as MiniCSSExtractPlugin from "mini-css-extract-plugin"
+import MiniCSSExtractPlugin from "mini-css-extract-plugin"
 import { Configuration } from "webpack"
-import { Environment, Options } from "./types"
-import { truthy } from "./utils"
+import { Environment, Options } from "./types.js"
+import { truthy } from "./utils.js"
 
-export function createWebpackConfig(
+export function createSimpleConfig(
   env: Environment,
   options: Options
 ): Configuration {

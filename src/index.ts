@@ -1,2 +1,2 @@
-export { createWebpackConfig } from "./createWebpackConfig"
-export type { Options, DevServerOptions } from "./types"
+export { createSimpleConfig } from "./createSimpleConfig.js"
+export type { DevServerOptions, Options } from "./types.js"
