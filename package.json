@@ -52,6 +52,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/eslint-parser": "^7.19.1",
+    "@jest/globals": "^29.4.1",
     "@mskelton/eslint-config": "^7.2.0",
     "@mskelton/tsconfig": "^2.0.0",
     "@types/html-webpack-plugin": "^3.2.6",

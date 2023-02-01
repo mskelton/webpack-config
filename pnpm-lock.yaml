@@ -7,6 +7,7 @@ specifiers:
   '@babel/preset-env': ^7.20.2
   '@babel/preset-react': ^7.18.6
   '@babel/preset-typescript': ^7.18.6
+  '@jest/globals': ^29.4.1
   '@mskelton/browserslist-config': ^2.0.0
   '@mskelton/eslint-config': ^7.2.0
   '@mskelton/tsconfig': ^2.0.0
@@ -48,6 +49,7 @@ dependencies:
 devDependencies:
   '@babel/core': 7.20.12
   '@babel/eslint-parser': 7.19.1_b3mcivpi6zqbotlvqqcfprcnry
+  '@jest/globals': 29.4.1
   '@mskelton/eslint-config': 7.2.0_og7742kyp7pjovwsdjxmdcd5nm
   '@mskelton/tsconfig': 2.0.0
   '@types/html-webpack-plugin': 3.2.6
