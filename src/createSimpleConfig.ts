@@ -6,7 +6,7 @@ import { truthy } from "./utils.js"
 
 export function createSimpleConfig(
   env: Environment,
-  options: Options
+  options: Options = {}
 ): Configuration {
   const opts: Options = {
     babel: true,
